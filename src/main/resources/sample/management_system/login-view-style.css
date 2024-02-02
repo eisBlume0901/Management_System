@@ -1,0 +1,39 @@
+.root {
+    -fx-font-family: Arial;
+    -fx-font-size: 14;
+    -fx-font-style: normal;
+    -fx-font-weight: 200;
+}
+
+.label {
+    -fx-text-fill: #40A2E3;
+}
+
+.text-field {
+    -fx-color: #40A2E3;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #40A2E3 transparent;
+}
+
+.text-field:focused {
+    -fx-color: #40A2E3;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #40A2E3 transparent;
+    -fx-border-width: 2px;
+}
+.button {
+    -fx-background-color: #40A2E3;
+    -fx-text-fill: #FFF6E9;
+}
+
+.button:hover {
+    -fx-background-color: #BBE2EC;
+    -fx-text-fill: #40A2E3;
+}
+
+.button:pressed {
+    -fx-background-color: #40A2E3;
+    -fx-text-fill: #FFF6E9;
+}
