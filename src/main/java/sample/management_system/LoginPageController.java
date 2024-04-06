@@ -27,15 +27,6 @@ public class LoginPageController {
 
     @FXML
     protected void login(ActionEvent actionEvent) throws IOException {
-//        Stage primaryStage = new Stage();
-//        DialogPaneApplication dialogPaneApplication = new DialogPaneApplication();
-//        FXMLLoader fxmlLoader = new FXMLLoader(DialogPaneApplication.class.getResource("dialog-pane-view.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 400, 150);
-////        String cssFileName = "login-view-style.css";
-////        scene.getStylesheets().add(getClass().getResource(cssFileName).toExternalForm());
-//        primaryStage.setTitle("Login Page");
-//        primaryStage.setScene(scene);
-//        primaryStage.show();
 
         String email = emailTextField.getText();
         String password = passwordTextField.getText();
@@ -53,6 +44,7 @@ public class LoginPageController {
             if (resultSet.next()) { // Check if a result is returned
                 if (resultSet.getString("role").equalsIgnoreCase("ADMIN")) {
                     System.out.println("Admin login");
+
                 } else if (resultSet.getString("role").equalsIgnoreCase("USER")) {
                     System.out.println("User login");
                 } else {
