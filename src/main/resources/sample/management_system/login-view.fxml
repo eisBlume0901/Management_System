@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFF6E9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.management_system.LoginPageController">
    <left>
       <BorderPane prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #40A2E3;" BorderPane.alignment="CENTER" />
@@ -16,9 +15,9 @@
       <AnchorPane prefHeight="400.0" prefWidth="349.0" style="-fx-background-color: #FFF6E9;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="25.0" layoutY="90.0" text="Email" />
-            <TextField layoutX="25.0" layoutY="115.0" prefHeight="25.0" prefWidth="300.0" />
+            <TextField fx:id="emailTextField" layoutX="25.0" layoutY="115.0" prefHeight="25.0" prefWidth="300.0" />
             <Label layoutX="25.0" layoutY="170.0" text="Password" />
-            <PasswordField layoutX="25.0" layoutY="195.0" prefHeight="25.0" prefWidth="300.0" />
+            <PasswordField fx:id="passwordTextField" layoutX="25.0" layoutY="195.0" prefHeight="25.0" prefWidth="300.0" />
             <Button fx:id="loginButton" defaultButton="true" layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="150.0" text="Login" />
             <Button fx:id="cancelButton" cancelButton="true" defaultButton="true" layoutX="100.0" layoutY="310.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="150.0" text="Cancel" />
          </children>
